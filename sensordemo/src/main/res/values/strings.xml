@@ -48,6 +48,7 @@
     <string name="menu_setting">Setting</string>
 
     <!--itrack desc-->
+    <string name="loading_text">Loading&#8230;</string>
     <string name="test_result_succ">Pass</string>
     <string name="test_result_fail">WeakSignal</string>
     <string name="track_name">KBeacon</string>
