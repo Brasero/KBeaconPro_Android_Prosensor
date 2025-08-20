@@ -126,7 +126,7 @@ public class DeviceScanActivity extends AppBaseActivity implements View.OnClickL
         mBeaconsMgr = KBeaconsMgr.sharedBeaconManager(this);
         if (mBeaconsMgr == null)
         {
-            toastShow("make sure the phone has support ble funtion");
+            toastShow("Verifier que votre appareil prend en charge le bluetooth");
             finish();
             return;
         }
@@ -367,20 +367,20 @@ public class DeviceScanActivity extends AppBaseActivity implements View.OnClickL
 
                     case KBAdvType.Sensor: {
                         KBAdvPacketSensor advSensor = (KBAdvPacketSensor) advPacket;
-                        Log.v(LOG_TAG, "Sensor battery:" + advSensor.getBatteryLevel());
-                        Log.v(LOG_TAG, "Sensor temp:" + advSensor.getTemperature());
+                        Log.v(LOG_TAG, "Batterie :" + advSensor.getBatteryLevel());
+                        Log.v(LOG_TAG, "Température :" + advSensor.getTemperature());
 
                         //device that has acc sensor
                         KBAccSensorValue accPos = advSensor.getAccSensor();
                         if (accPos != null) {
                             String strAccValue = String.format(Locale.ENGLISH, "x:%d; y:%d; z:%d",
                                     accPos.xAis, accPos.yAis, accPos.zAis);
-                            Log.v(LOG_TAG, "Sensor Acc:" + strAccValue);
+                            Log.v(LOG_TAG, "Accéleration :" + strAccValue);
                         }
 
                         //device that has humidity sensor
                         if (advSensor.getHumidity() != null) {
-                            Log.v(LOG_TAG, "Sensor humidity:" + advSensor.getHumidity());
+                            Log.v(LOG_TAG, "Humidité :" + advSensor.getHumidity());
                         }
 
                         //device that has alarm sensor(cutoff, door, parking sensor)
