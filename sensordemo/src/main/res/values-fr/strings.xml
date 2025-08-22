@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Dialog_Cancel">Annuler</string>
+    <string name="track_setting">Paramètres</string>
+
+    <string name="app_name">Prosensor</string>
+    <string name="ble_not_supported">L’appareil ne supporte pas le BLE 4.0</string>
+    <string name="ble_function_disable">La fonction Bluetooth n’est pas activée sur le téléphone.</string>
+    <string name="label_data">Données :</string>
+    <string name="label_device_address">Adresse :</string>
+    <string name="label_state">État :</string>
+    <string name="no_data">Aucune donnée</string>
+    <string name="connected">Connecté</string>
+    <string name="connecting">Connexion en cours</string>
+    <string name="disconnected">Déconnecté</string>
+    <string name="unknown">Inconnu</string>
+    <string name="title_devices">Test</string>
+    <string name="error_bluetooth_not_supported">Bluetooth non pris en charge.</string>
+
+    <string name="unknown_device">Appareil inconnu</string>
+    <string name="unknown_characteristic">Caractéristique inconnue</string>
+    <string name="unknown_service">Service inconnu</string>
+
+    <string name="title_activity_lock">Verrou</string>
+    <string name="UPDATE_NOT_FOUND_DEVICE_MODEL">Modèle introuvable</string>
+
+    <!-- Menu -->
+    <string name="startScanning">Scanner</string>
+    <string name="menu_remove">Supprimer</string>
+    <string name="menu_stop">Arrêter</string>
+    <string name="menu_shut">Éteindre</string>
+    <string name="menu_setting">Paramètres</string>
+
+    <!-- Résultats -->
+    <string name="loading_text">Chargement&#8230;</string>
+    <string name="test_result_succ">Réussi</string>
+    <string name="test_result_fail">Signal faible</string>
+    <string name="track_name">KBeacon</string>
+    <string name="track_mac_address">FF:FF:FF:FF:FF:FF</string>
+    <string name="track_state">Statut :</string>
+    <string name="title_activity_setting">Paramètres</string>
+
+    <string name="track_setting_save">Enregistrer</string>
+
+    <string name="menu_connect">Connexion</string>
+    <string name="menu_disconnect">Déconnexion</string>
+
+    <string name="Dialog_OK">OK</string>
+    <string name="version_desc">Version :</string>
+    <string name="battery_level">Niveau de batterie :</string>
+
+    <string name="conn_error_title">Échec de connexion</string>
+    <string name="auth_error_title">Échec d’authentification, veuillez définir un nouveau mot de passe</string>
+    <string name="connect_error_timeout">Échec de connexion, réessayez. Si le problème persiste, redémarrez le Bluetooth et l’application.</string>
+    <string name="connect_error_auth_format">Format du mot de passe incorrect, veuillez entrer un mot de passe ASCII de 16 caractères.</string>
+    <string name="test_number">N° Test</string>
+    <string name="VIB_ALERT_SW">Alerte vibration</string>
+    <string name="LOCK_ALERT_ON">Activé</string>
+    <string name="LOCK_ALERT_OFF">Désactivé</string>
+    <string name="ALERT_TITLE">Alerte :</string>
+    <string name="mdy_pwd_desc">Modifier le mot de passe</string>
+    <string name="name_not_null">Le nom ne peut pas être vide</string>
+    <string name="connected_discovered">Découvert</string>
+    <string name="new_name_dlg_title">Nouveau nom</string>
+    <string name="new_password_desc">Nouveau mot de passe</string>
+    <string name="confirm_password">Confirmez votre mot de passe</string>
+    <string name="Old_password_wrong">Ancien mot de passe incorrect</string>
+    <string name="new_password_not_equal">Les mots de passe ne correspondent pas</string>
+    <string name="password_not_6_char">Le mot de passe doit comporter 6 caractères.</string>
+    <string name="mdy_lock_name_desc">Modifier le nom</string>
+    <string name="cmd_low_battery_desc">Batterie faible, verrouillage impossible !</string>
+    <string name="cmd_low_battery_title">Batterie faible</string>
+    <string name="menu_dfu">MàJ firmware</string>
+    <string name="menu_refresh">Rafraîchir</string>
+    <string name="DUF_LABEL_DESC">Démarrer DFU</string>
+    <string name="START_DFU_BUTTON_TITLE">Démarrer</string>
+    <string name="BTN_TURNOFF_TITLE">Éteindre</string>
+
+    <string name="cmd_lock_fail_title">Échec du verrouillage</string>
+    <string name="cmd_lock_fail_desc">Le verrouillage a échoué !</string>
+
+    <string name="dfu_failed_title">Échec DFU</string>
+    <string name="dfu_failed_notsupport">Firmware non compatible DFU</string>
+    <string name="app_version">Version</string>
+    <string name="Old_password_hint">Ancien mot de passe</string>
+
+    <string name="VIB_CFG_DOWNLOAD_SUCCESS">Configuration vibration modifiée avec succès.</string>
+    <string name="ENABLE_AUTOUNLOCK_CFG_SUCC">Configuration de déverrouillage auto modifiée avec succès.</string>
+    <string name="BEACON_RSSI_VALUE">RSSI :</string>
+    <string name="BEACON_MAJOR">Major :</string>
+    <string name="BEACON_MINOR">Minor :</string>
+    <string name="BEACON_CONN_ENABLE">Connectable :</string>
+    <string name="BEACON_TX_POWER">Puissance Tx :</string>
+    <string name="BEACON_BATTERY">Batterie :</string>
+    <string name="BEACON_MAC_ADDRESS">Mac :</string>
+    <string name="BEACON_TEMP">Température :</string>
+    <string name="BEACON_RTT">Rtt :</string>
+    <string name="BEACON_UUID">UUID :</string>
+    <string name="EDDYSTONE_URL_DESC">Url :</string>
+    <string name="EDDYSTONE_UID">UID :</string>
+    <string name="BEACON_MAJOR_EXPLAIN">(0~0xFFFF)</string>
+    <string name="BEACON_ADV_TYPE">Type de diffusion :</string>
+    <string name="BEACON_MODEL_TYPE">Modèle :</string>
+    <string name="ADV_TYPE_IBEACON">iBeacon</string>
+    <string name="ADV_TYPE_TLM">TLM</string>
+    <string name="ADV_TYPE_URL">EddyURL</string>
+    <string name="ADV_TYPE_UID">EddyUID</string>
+    <string name="BEACON_16_HEX">(16 Hex)</string>
+    <string name="BEACON_ADV_PERIOD">Période d’annonce :</string>
+    <string name="BEACON_ADV_PRD_EXP">(100~10000ms)</string>
+    <string name="EDIT_BEACON_TX_POWER">Puissance Tx (dBm):</string>
+    <string name="BEACON_NEW_PWD">Changer le mot de passe :</string>
+    <string name="BEACON_NEW_PWD_EXP">(6 caractères)</string>
+
+    <string name="BEACON_DOWNLOAD">Télécharger configuration</string>
+
+    <string name="DISCOVER_SRV">Découvrir services</string>
+    <string name="devMenuUpload">Enregistrer</string>
+    <string name="IBeaconSettingDesc">Paramètres iBeacon :</string>
+    <string name="CommonSetting">Paramètres généraux :</string>
+
+    <string name="BEACON_NAME">Nom :</string>
+    <string name="BEACON_NAME_EXP">(1~11 caractères)</string>
+    <string name="BEACON_PWD_EXP">(8~16 caractères)</string>
+    <string name="BEACON_ADV_PERIOD_FMT_ERROR">Erreur format de la période (101~10000ms)</string>
+    <string name="BEACON_DEV_NAME_FMT_ERROR">Erreur format du nom (1~16 caractères)</string>
+
+
+    <string name="EDDY_URL_FMT_ERROR">Erreur de format Eddystone URL. Exemple attendu : http://www.kkmcn.com/</string>
+    <string name="IBEACON_MAJOR_FMT_ERROR">Erreur de format Apple iBeacon MajorID, exemple valide : 0x00F1</string>
+    <string name="IBEACON_MINOR_FMT_ERROR">Erreur de format Apple iBeacon MinorID, exemple valide : 0x00F1</string>
+    <string name="IBEACON_UUID_FMT_ERROR">Erreur de format Apple iBeacon UUID</string>
+
+    <string name="auth_write_pwd_title">Veuillez saisir le code de déverrouillage</string>
+    <string name="authentication_failed_desc">Échec de l’authentification, veuillez vérifier si le mot de passe est correct !</string>
+    <string name="common_error_title">Erreur</string>
+    <string name="err_read_check_failed">Échec de la vérification de lecture, veuillez réessayer</string>
+    <string name="upload_config_paramaters">Télécharger les paramètres</string>
+    <string name="upload_data_success">Paramètres envoyés avec succès à l’appareil !</string>
+    <string name="upload_data_title">Téléchargement réussi</string>
+    <string name="upload_read_check_paramaters">Lecture des paramètres de l’appareil pour vérification</string>
+    <string name="upload_ready_paramaters">Démarrage</string>
+    <string name="upload_unlock_for_write">Déverrouillage de l’appareil</string>
+    <string name="upload_write_paramaters">Écriture des paramètres sur l’appareil</string>
+    <string name="err_no_data_chage_need_cfg">Aucun téléchargement nécessaire, aucun paramètre modifié</string>
+    <string name="BEACON_OLD_PWD">Mot de passe :</string>
+    <string name="beacon_cfg_conn_enalbe">Connexion activée</string>
+    <string name="beacon_load_para_to_template_failed">Aucun paramètre de configuration de modèle disponible</string>
+    <string name="beacon_load_para_to_template_success">Chargement des paramètres réussi</string>
+    <string name="beacon_save_para_to_template_success">Enregistrement des paramètres réussi</string>
+
+    <string name="common_succ_title">Succès</string>
+    <string name="device_list">Liste des appareils</string>
+    <string name="BEACON_MAJOR_LIST">Major :</string>
+    <string name="BEACON_MINOR_LIST">Minor :</string>
+    <string name="KBEACON_ADV_NO_CONNECTABLE">L’appareil est en mode mesure non connectable. Appuyez sur le bouton du KBeacon ou réinsérez la batterie pour le rendre connectable.</string>
+    <string name="location_permit_needed_for_ble">Le Bluetooth nécessite l’autorisation de localisation pendant le scan</string>
+    <string name="location_permit_for_ble_failed">Échec de la vérification de l’autorisation de localisation, démarrage du scan BLE échoué.</string>
+    <string name="connecting_permit_for_ble_failed">Échec de la vérification de l’autorisation de connexion BLE.</string>
+
+    <string name="SCAN_FAILED_REBOOT">Échec du scan, veuillez redémarrer le Bluetooth et réessayer.</string>
+    <string name="list_select_type">Sélectionner</string>
+    <string name="ele_value_name">Valeur</string>
+    <string name="disconnect_notice">Notification</string>
+    <string name="disconnection_description">Connexion interrompue.</string>
+    <string name="ble_device_connecting">Connexion en cours…</string>
+
+    <string name="activity_beacon_detail_title">Détails du Beacon</string>
+
+    <string name="activity_cfg_name_title">Nom du Beacon</string>
+    <string name="name_max_then_12_ascii">Astuce : le nom doit contenir moins de 17 caractères ASCII</string>
+
+    <string name="activity_cfg_advprd_title">Intervalle de mesure</string>
+    <string name="cfg_advprd_tip">Astuce : un intervalle plus court facilite le scan et la connexion du beacon, mais consomme plus d’énergie</string>
+
+    <string name="activity_cfg_advflag_title">Connectable</string>
+    <string name="cfg_advflag_tip">Astuce : 1 = connectable, 0 = non connectable</string>
+
+    <string name="activity_cfg_tx_power_title">Puissance Tx :</string>
+
+    <string name="activity_cfg_measure_pwr_title">Puissance mesurée</string>
+    <string name="cfg_tx_measure_pwr_tip">Astuce : puissance reçue à 1 m. Valeurs typiques : -64 dBm à -54 dBm. Modification non recommandée pour les non-professionnels.</string>
+    <string name="cfg_tx_measure_pwr_set_error">Erreur de valeur. La plage valide est de -64 dBm à -54 dBm.</string>
+
+    <string name="activity_cfg_beacon_type_title">Type de Beacon</string>
+    <string name="cfg_beacon_type_tip">Astuce : si défini sur iBeacon ou Eddystone URL/UID, le paquet TLM sera diffusé 10× plus souvent que les autres types.</string>
+
+    <string name="hex_input_prefex">0x</string>
+    <string name="tx_power_uint_dbm">dBm</string>
+
+
+    <string name="activity_cfg_uuid_title">UUID</string>
+    <string name="uuid_air_locate_name">Air Locate</string>
+    <string name="uuid_web_chat_name">Web Chat</string>
+    <string name="uuid_estimote_name">Estimote</string>
+    <string name="uuid_kkm_name">KKM</string>
+
+    <string name="activity_cfg_ibeacon_majorid_title">Identifiant majeur (MajorID)</string>
+    <string name="cfg_beacon_majorid_tip">Astuce : plage 0x0000~0xFFFF. Veuillez saisir en format hexadécimal. Exemple : 0x00F1</string>
+
+    <string name="activity_cfg_ibeacon_minorid_title">Identifiant mineur (MinorID)</string>
+    <string name="cfg_beacon_minorid_tip">Astuce : plage 0x0000~0xFFFF. Veuillez saisir en format hexadécimal. Exemple : 0x00F1</string>
+
+    <string name="activity_cfg_ibeacon_namespaceid_title">NamespaceID</string>
+    <string name="cfg_beacon_namespace_tip">Astuce : saisissez un Namespace ID Eddystone UID de 10 octets. Exemple : 0x0000000000A1000000F1</string>
+    <string name="beacon_namespace_format_error">Erreur de format : le Namespace ID Eddystone UID doit faire 10 octets. Exemple : 0x0000000000A1000000F1</string>
+
+    <string name="activity_cfg_ibeacon_serialid_title">Identifiant série</string>
+    <string name="cfg_beacon_serialid_tip">Astuce : saisissez un identifiant série Eddystone UID de 6 octets. Exemple : 0x00A1000000F1</string>
+    <string name="beacon_serial_format_error">Erreur de format : l’identifiant série Eddystone UID doit faire 6 octets. Exemple : 0x00A1000000F1</string>
+
+    <string name="ble_filed_namespace_id">Namespace ID</string>
+    <string name="ble_filed_instance_id">Instance ID</string>
+    <string name="ble_filed_uuid">UUID</string>
+    <string name="ble_filed_majorid">Major ID</string>
+    <string name="ble_filed_minorid">Minor ID</string>
+
+    <string name="ble_filed_modify_pwd">Modifier le mot de passe</string>
+    <string name="password_input_tip">Le mot de passe doit contenir 16 caractères ASCII. Le mot de passe par défaut est 0000000000000000</string>
+    <string name="password_length_error">La longueur du mot de passe n’est pas de 16 caractères ASCII.</string>
+    <string name="password_not_equal">La confirmation du nouveau mot de passe ne correspond pas au mot de passe saisi.</string>
+
+    <string name="activity_cfg_url_address_title">Adresse URL</string>
+    <string name="cfg_field_url_tip">Astuce : saisissez une adresse URL. Exemple : https://www.google.com/</string>
+
+    <string name="activity_cfg_system_info_title">Informations système</string>
+    <string name="activity_cfg_system_info_id">Identifiant système</string>
+    <string name="activity_cfg_system_info_model">Modèle</string>
+    <string name="activity_cfg_system_info_version">Version</string>
+
+    <string name="bluetooth_error_need_reboot">Erreur Bluetooth d’Android OS. Essayez de désactiver puis réactiver le Bluetooth. Si le problème persiste, redémarrez le téléphone.</string>
+
+    <string name="double_click_quit">Appuyez deux fois pour quitter l’application</string>
+
+    <string name="button_trigger_command">Commande déclenchée par bouton :</string>
+    <string name="motion_sensor_command">Commande déclenchée par mouvement :</string>
+    <string name="temp_humidity_sensor_command">Commande capteur Température &amp; Humidité</string>
+    <string name="other_sensor_command">Autre commande capteur</string>
+    <string name="ring_device_btn_title">Faire sonner l’appareil</string>
+    <string name="co2_calibration">Calibration</string>
+    <string name="co2_baseline_read">Lire</string>
+
+    <string name="enable_btn_trigger_to_adv">Événement bouton → Annonce</string>
+    <string name="enable_btn_trigger_to_app">Événement bouton → Application</string>
+    <string name="read_btn_trigger">Lire paramètres</string>
+
+    <string name="enable_th_trigger_adv">Événement T/H → Annonce</string>
+    <string name="enable_th_change_report">Événement T/H → Application</string>
+    <string name="enable_th_periodically_report">Rapport périodique → Application</string>
+
+    <string name="DEVICE_DFU_TITLE">Mise à jour du firmware</string>
+    <string name="DEVICE_DFU_STATUS">Statut</string>
+    <string name="DEVICE_CHECK_UPDATE">Vérification de la version…</string>
+    <string name="DEVICE_LATEST_VERSION">La version actuelle est la plus récente, aucune mise à jour nécessaire.</string>
+    <string name="DFU_CONNECT_SERVICE_FAIL">Échec de connexion au serveur cloud. Vérifiez la connexion réseau et les permissions de l’application.</string>
+
+    <string name="DFU_FOUND_NEW_VERSION">Nouvelle version (%s) trouvée. Voulez-vous mettre à jour ?</string>
+    <string name="UPDATE_STARTED">Mise à jour en cours…</string>
+    <string name="DFU_TITLE">Mise à jour</string>
+
+    <string name="UPDATE_CONNECTING">Connexion à l’appareil…</string>
+    <string name="UPDATE_UPLOADING">Envoi du firmware…</string>
+    <string name="UPDATE_DISCONNECTED">Appareil déconnecté !</string>
+    <string name="UPDATE_ABORTED">Mise à jour annulée !</string>
+    <string name="UPDATE_CONNECTED">Appareil connecté</string>
+    <string name="UPDATE_COMPLETE">Mise à jour réussie !</string>
+    <string name="UPDATE_NETWORK_FAIL">Échec réseau !</string>
+    <string name="NB_network_cloud_server_error">Erreur serveur cloud</string>
+    <string name="NB_network_file_not_exist">Fichier introuvable sur le serveur cloud</string>
+    <string name="UPDATE_FOUND_NEW_VERSION">Nouvelle version trouvée</string>
+    <string name="kb_dfu_device">DFU</string>
+    <string name="kb_co2_calibration_level">Niveau CO2</string>
+    <string name="kb_co2_calibration_baseline">Valeur de référence</string>
+    <string name="menu_firmware_update">Mise à jour</string>
+    <string name="UPDATE_RELEASE_NOTES">Notes de version :</string>
+    <string name="BEACON_RSSI_Filter_title">RSSI</string>
+    <string name="BEACON_FILTER_BEACON">Appuyez pour modifier le filtre</string>
+    <string name="BEACON_RSSI_UINT">dBm</string>
+
+    <string name="UPDATE_NOT_FOUND_NEW_VERSION">Impossible d’obtenir la dernière version. Vérifiez la connexion Internet.</string>
+
+    <string name="DFU_VERSION_MAKE_SURE">Pour garantir une mise à jour réussie, gardez le téléphone à moins de 3 mètres du périphérique KBeacon. Voulez-vous continuer ?</string>
+    <string name="EXPORT_HISTORY_DATA_EMAIL_TITLE">Données capteur de l’appareil (mac : %1$s)</string>
+    <string name="BEACON_FILTER_NAME">Nom du filtre</string>
+
+    <string name="update_ibeacon_2_tlm">iBeacon2TLM</string>
+    <string name="BEACON_TEMP_UINT">°C</string>
+    <string name="BEACON_HUM">Humidité :</string>
+    <string name="BEACON_VOLTAGE">Tension :</string>
+    <string name="BEACON_TEMPERATURE">Température :</string>
+    <string name="BEACON_ACC_POS">Axes :</string>
+    <string name="BEACON_ACC_CO2">CO2 :</string>
+    <string name="BEACON_ACC_VOC">COV :</string>
+
+    <string name="LOAD_MOVING_DATA_FAILED">Délai d’attente lors du chargement des données de mouvement.</string>
+    <string name="load_data_complete">Lecture terminée : %1$d enregistrements mis à jour.</string>
+    <string name="load_data_complete_no_more_data">Lecture de %1$d enregistrements terminée, pas de nouvelles données.</string>
+    <string name="track_clear_fail">Échec lors de l’effacement de l’historique, veuillez réessayer plus tard.</string>
+    <string name="track_clear_success">Historique effacé avec succès</string>
+    <string name="no_data_to_export">Aucune donnée à exporter</string>
+    <string name="track_clear_history_desc">Effacer l’historique supprimera définitivement toutes les données de distanciation. Voulez-vous continuer ?</string>
+    <string name="VIEW_TEMP_HUMIDITY_HISTORY">Voir l’historique Température &amp; Humidité</string>
+    <string name="track_alarm_history_clear">Effacer</string>
+    <string name="track_alarm_history_export">Exporter</string>
+
+    <string name="ENABLE_MOTION_TRIGGER">Mouvement → Annonce</string>
+    <string name="disable_motion_trigger">Désactiver le déclencheur</string>
+
+    <string name="ENABLE_AXIS_ADVERTISEMENT">Inclure axes</string>
+    <string name="ENABLE_HT_ADVERTISEMENT">Inclure Température &amp; Humidité</string>
+    <string name="enable_th_adv_report">Données T/H → Annonce</string>
+    <string name="TEMP_HUMIDITY_SETTING">Paramètres T/H :</string>
+    <string name="TH_MEASURE_INTERVAL">Intervalle de mesure :</string>
+    <string name="TEMP_CHANGE_THD">Seuil de variation de température :</string>
+    <string name="HUMIDITY_CHANGE_THD">Seuil de variation d’humidité :</string>
+
+    <string name="temp_humidity_sensor_trigger">Déclencheur Température &amp; Humidité</string>
+
+    <string name="RECEIVE_NOTIFY_DATA">Notification T&amp;H reçue. UTC : %1$s, Température : %2$f, Humidité : %3$f</string>
+
+    <string name="dfu_action_abort">Annuler</string>
+    <string name="dfu_channel_description">Affiche la progression de la mise à jour (DFU).</string>
+    <string name="dfu_channel_name">DFU</string>
+    <string name="dfu_status_aborted">Annulé</string>
+    <string name="dfu_status_aborted_msg">L’envoi de l’application a été annulé.</string>
+    <string name="dfu_status_aborting">Annulation en cours…</string>
+    <string name="dfu_status_completed">Terminé</string>
+    <string name="dfu_status_completed_msg">L’application a été envoyée avec succès.</string>
+    <string name="dfu_status_connecting">Connexion…</string>
+    <string name="dfu_status_connecting_msg">Connexion à %s…</string>
+    <string name="dfu_status_disconnecting">Déconnexion…</string>
+    <string name="dfu_status_disconnecting_msg">Déconnexion de %s…</string>
+    <string name="dfu_status_error">Échec de l’envoi</string>
+    <string name="dfu_status_error_msg">Le processus DFU a échoué.</string>
+    <string name="dfu_status_foreground_content">Mise à jour en cours…</string>
+    <string name="dfu_status_foreground_title">Mise à jour du firmware</string>
+    <string name="dfu_status_initializing">Initialisation…</string>
+    <string name="dfu_status_starting">Démarrage de la mise à jour…</string>
+    <string name="dfu_status_starting_msg">Initialisation du processus DFU…</string>
+    <string name="dfu_status_switching_to_dfu">Démarrage du bootloader…</string>
+    <string name="dfu_status_switching_to_dfu_msg">Attente du bootloader…</string>
+    <string name="dfu_status_uploading">Téléversement…</string>
+    <string name="dfu_status_uploading_msg">Transmission du firmware à %s…</string>
+    <string name="dfu_status_uploading_part">Envoi de la partie %d/%d…</string>
+    <string name="dfu_status_validating">Validation…</string>
+    <string name="dfu_status_validating_msg">Validation en cours…</string>
+    <string name="dfu_unknown_name">Appareil sans nom</string>
+</resources>

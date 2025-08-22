@@ -124,29 +124,29 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
         //button trigger
         mReadButtonTrigger = findViewById(R.id.readBtnTriggerPara);
         mReadButtonTrigger.setOnClickListener(this);
-        mTriggerButtonAdv = (Button) findViewById(R.id.enableBtnAdvTrigger);
+//        mTriggerButtonAdv = (Button) findViewById(R.id.enableBtnAdvTrigger);
         mTriggerButtonAdv.setOnClickListener(this);
-        mTriggerButtonApp = (Button) findViewById(R.id.enableBtnAppTrigger);
+//        mTriggerButtonApp = (Button) findViewById(R.id.enableBtnAppTrigger);
         mTriggerButtonApp.setOnClickListener(this);
 
         //acc trigger
-        mEnableAccTrigger = findViewById(R.id.enableAccTrigger);
+//        mEnableAccTrigger = findViewById(R.id.enableAccTrigger);
         mEnableAccTrigger.setOnClickListener(this);
-        mDisableAccTrigger = findViewById(R.id.disableAccAppTrigger);
+//        mDisableAccTrigger = findViewById(R.id.disableAccAppTrigger);
         mDisableAccTrigger.setOnClickListener(this);
 
         //KSensor advertisement
         nEnableTHData2Adv = (Button) findViewById(R.id.enableTHAdvertisement);
         nEnableTHData2Adv.setOnClickListener(this);
-        nEnableAxisData2Adv = findViewById(R.id.enableAccAdvertisement);
+//        nEnableAxisData2Adv = findViewById(R.id.enableAccAdvertisement);
         nEnableAxisData2Adv.setOnClickListener(this);
         mViewTHDataHistory = findViewById(R.id.viewTHDataHistory); //view temperature and humidity data history
         mViewTHDataHistory.setOnClickListener(this);
 
         //TH trigger
-        nEnableTHTrigger2Adv = findViewById(R.id.enableTHChangeTriggerEvtRpt2Adv);
+//        nEnableTHTrigger2Adv = findViewById(R.id.enableTHChangeTriggerEvtRpt2Adv);
         nEnableTHTrigger2Adv.setOnClickListener(this);
-        nEnableTHTrigger2App = findViewById(R.id.enableTHChangeTriggerEvtRpt2App);
+//        nEnableTHTrigger2App = findViewById(R.id.enableTHChangeTriggerEvtRpt2App);
         nEnableTHTrigger2App.setOnClickListener(this);
 
         //send temperature humidity data to app
@@ -154,7 +154,7 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
         mEnablePeriodicallyTrigger2App.setOnClickListener(this);
         mRingButton = (Button) findViewById(R.id.ringDevice);
         mRingButton.setOnClickListener(this);
-        findViewById(R.id.dfuDevice).setOnClickListener(this);
+//        findViewById(R.id.dfuDevice).setOnClickListener(this);
 
 
     }
@@ -169,11 +169,11 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
             menu.findItem(R.id.menu_disconnect).setVisible(true);
             menu.findItem(R.id.menu_connecting).setVisible(false);
             menu.findItem(R.id.menu_connecting).setActionView(null);
-            mBeaconStatus.setText("Connected");
+            mBeaconStatus.setText(R.string.connected);
         }
         else if (mBeacon.getState() == KBConnState.Connecting)
         {
-            mBeaconStatus.setText("Connecting");
+            mBeaconStatus.setText(R.string.connecting);
             menu.findItem(R.id.menu_connect).setEnabled(false);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
             menu.findItem(R.id.menu_connecting).setActionView(
@@ -181,7 +181,7 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
         }
         else
         {
-            mBeaconStatus.setText("Disconnected");
+            mBeaconStatus.setText(R.string.disconnected);
             menu.findItem(R.id.menu_connect).setEnabled(true);
 //            menu.findItem(R.id.menu_connect).setVisible(true);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
@@ -197,21 +197,23 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
         int id = v.getId();
         if (id == R.id.readBtnTriggerPara) {
             readButtonTriggerPara();
-        }else if (id == R.id.enableBtnAdvTrigger) {
-            enableButtonTriggerEvent2Adv();
-        }else if (id == R.id.enableBtnAppTrigger) {
-            enableButtonTriggerEvent2App();
-        }else if (id == R.id.enableAccTrigger) {
-            //acc trigger
-            enableMotionTrigger();
-        }else if (id == R.id.disableAccAppTrigger) {
-            disableMotionTrigger();
-        }else if (id == R.id.enableAccAdvertisement) {
-            //ksensor advertisement
-            enableAdvTypeIncludeAccXYZ();
-        }else if (id == R.id.enableTHAdvertisement) {
-            enableAdvTypeIncludeAccTH();
-        }else if (id == R.id.viewTHDataHistory) {
+       }
+//        else if (id == R.id.enableBtnAdvTrigger) {
+//            enableButtonTriggerEvent2Adv();
+//        }else if (id == R.id.enableBtnAppTrigger) {
+//            enableButtonTriggerEvent2App();
+//        }else if (id == R.id.enableAccTrigger) {
+//            //acc trigger
+//            enableMotionTrigger();
+//        }else if (id == R.id.disableAccAppTrigger) {
+//            disableMotionTrigger();
+//        }else if (id == R.id.enableAccAdvertisement) {
+//            //ksensor advertisement
+//            enableAdvTypeIncludeAccXYZ();
+//        }else if (id == R.id.enableTHAdvertisement) {
+//            enableAdvTypeIncludeAccTH();
+//        }
+        else if (id == R.id.viewTHDataHistory) {
             if (mBeacon.isConnected()) {
                 KBCfgCommon commCfg = mBeacon.getCommonCfg();
                 if (commCfg != null && commCfg.isSupportHumiditySensor()) {
@@ -224,21 +226,23 @@ public class DevicePannelActivity extends AppBaseActivity implements View.OnClic
             } else {
                 toastShow("device not connected");
             }
-        }else if (id == R.id.enableTHChangeTriggerEvtRpt2Adv) {
-            //T&H trigger
-            enableTHTriggerEvtRpt2Adv();
-        }else if (id == R.id.enableTHChangeTriggerEvtRpt2App) {
-            enableTHTriggerEvtRpt2App();
-        }else if (id == R.id.enablePeriodicallyTHDataToApp) {
-            enableTHPeriodicallyTriggerRpt2App();
-        }else if (id == R.id.dfuDevice) {
-            //DFU service
-            if (mBeacon.isConnected()) {
-                final Intent intent = new Intent(this, KBeaconDFUActivity.class);
-                intent.putExtra(KBeaconDFUActivity.DEVICE_MAC_ADDRESS, mBeacon.getMac());
-                startActivityForResult(intent, 1);
-            }
-        }else if (id == R.id.ringDevice) {
+        }
+//        else if (id == R.id.enableTHChangeTriggerEvtRpt2Adv) {
+//            //T&H trigger
+//            enableTHTriggerEvtRpt2Adv();
+//        }else if (id == R.id.enableTHChangeTriggerEvtRpt2App) {
+//            enableTHTriggerEvtRpt2App();
+//        }else if (id == R.id.enablePeriodicallyTHDataToApp) {
+//            enableTHPeriodicallyTriggerRpt2App();
+//        }else if (id == R.id.dfuDevice) {
+//            //DFU service
+//            if (mBeacon.isConnected()) {
+//                final Intent intent = new Intent(this, KBeaconDFUActivity.class);
+//                intent.putExtra(KBeaconDFUActivity.DEVICE_MAC_ADDRESS, mBeacon.getMac());
+//                startActivityForResult(intent, 1);
+//            }
+//        }
+        else if (id == R.id.ringDevice) {
            //ringDevice();
 
             //enableRepeaterScanner();
